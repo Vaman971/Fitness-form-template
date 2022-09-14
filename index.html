@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Fitness</title>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap" rel="stylesheet">
+    <style>
+        body {
+            color: white;
+            margin: 0px;
+            padding: 0px;
+            background: url('pictures/bg.jpg');
+            height: 1250px;
+            font-family: 'Baloo Bhai 2', cursive;
+        }
+
+        .left {
+            /* border: 2px solid red; */
+            display: inline-block;
+            position: absolute;
+            left: 51px;
+            top: 0px;
+        }
+
+        .left img {
+            width: 135px;
+            filter: invert(100);
+        }
+
+        .left div {
+            text-align: center;
+            line-height: 19px;
+            font-size: 21px;
+        }
+
+        .mid {
+            /* border: 2px solid white; */
+            display: block;
+            width: 45%;
+            margin: 30px auto;
+            position: sticky;
+            top: 9px;
+        }
+
+        .right {
+            /* border: 2px solid purple; */
+            right: 51px;
+            top: 8px;
+            display: inline-block;
+            position: absolute;
+        }
+
+        .navbar {
+            display: inline-block;
+            position: sticky;
+            top: 9px;
+
+
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 25px;
+            position: sticky;
+            top: 9px;
+
+
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            padding: 34px 23px;
+            position: sticky;
+            top: 9px;
+        }
+
+        .navbar li a:hover
+         {
+            text-decoration: underline;
+            color: rgb(151, 240, 240);
+        }
+
+        .btn {
+            margin: 0px 10px;
+            font-family: 'Baloo Bhai 2', cursive;
+            color: white;
+            background-color: #afa4a47a;
+            padding: 6px 27px;
+            border: 2px solid grey;
+            border-radius: 10%;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: rgb(55, 59, 55);
+        }
+
+        .container {
+            border: 2px solid white;
+            margin: 140px 34px;
+            padding: 75px;
+            width: 37%;
+            border-radius: 31px;
+        }
+
+        .form-group input {
+            text-align: center;
+            display: block;
+            width: 401px;
+            padding: 30px;
+            margin: 14px;
+            border-radius: 15px;
+            font-size: 25px;
+        }
+
+        .container h1 {
+            text-align: left;
+            padding: 8px 12px;
+            margin: 2px 60px;
+            display: block;
+        }
+
+        .container button {
+            display: block;
+            width: 36%;
+            margin: 11px 13px;
+        }
+
+        .bottomleft li {
+            display: inline-block;
+            font-stretch: 25px;
+            padding: 8px 8px;
+            margin: 10px;
+            text-align: center;
+            border: 2px solid grey;
+            border-radius: 15px;
+            background-color: rgb(96, 121, 96);
+
+        }
+
+        .bottomleft li a {
+            text-decoration: none;
+            padding: 5px 8px;
+            margin: 8px;
+            color: rgb(176, 176, 226);
+        }
+
+        .bottomleft li a:hover {
+            color: rgb(188, 240, 240);
+        }
+    </style>
+
+</head>
+
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="pictures/symbol-removebg-preview.png" alt="unable to load">
+            <div>
+                Fitness freaks
+            </div>
+        </div>
+        <!-- Mid box for navigation -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" >Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Fitness Details</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </div>
+        <!-- right box for search -->
+        <div class="right">
+            <button class="btn">
+                contact us
+            </button>
+            <button class="btn">
+                Mail us
+            </button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Come join us and stay fit</h1>
+        <form action="noaction.py">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your name here">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your address here">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your phone no. here">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your E-mail address here">
+            </div>
+            <button class="btn">Submit form</button>
+            <div class="form-contact">
+                <ul class="bottomleft">
+                    <li>Contact number-: <a href="#">6201353598</a></li>
+                    <li>Instagram handle-: <a href="#">instg</a></li>
+                </ul>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
